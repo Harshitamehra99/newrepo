@@ -1,0 +1,16 @@
+name: web_theme
+type: theme
+description: 'Custom Theme for My Website.'
+base theme: false
+package: Other
+screenshot: screenshot.png
+core_version_requirement: ^8 || ^9
+version: VERSION
+libraries:
+  - web_theme/global-styling
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  content: Content
+  footer: Footer

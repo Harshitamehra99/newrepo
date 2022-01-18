@@ -1,0 +1,31 @@
+custom_module.create_record:
+  path: '/welcome'
+  defaults:
+    _form: '\Drupal\custom_module\Form\CustomForm'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements: 
+    _permission: 'access content'
+
+custom_module.showdata:
+  path: '/student-terms'
+  defaults:
+    _controller: '\Drupal\custom_module\Controller\CustomController::showdata'
+    _title: 'Terms and conditions'
+  requirements:
+    _permission: 'access content'
+
+custom_module.update_form:
+  path: '/students/update/{id}'
+  defaults:
+    _form: '\Drupal\custom_module\Form\UpdateForm'
+    _title: 'UpdateForm'
+  requirements:
+    _permission: 'access content'
+
+custom_module.delete_form:
+  path: '/students/delete/{id}'
+  defaults:
+    _form: '\Drupal\custom_module\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _permission: 'access content'

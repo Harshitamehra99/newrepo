@@ -1,0 +1,16 @@
+<section>
+    <div class="container sponsors-sec text-center">
+        <div class="row">
+        {% for row in rows %}
+            <h1>{{ row.content['#row']._entity.field_sponsors[0].value }}</h1>
+            {% for img in row.content['#row']._entity.field_sponsors_img %}
+            {% if img.entity.uri.value %}
+            <div class="col-md-4 col-sm-4">
+                <img class="img-responsive" src="{{file_url(img.entity.uri.value)}}">
+            </div>
+            {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+    </div>
+</section>

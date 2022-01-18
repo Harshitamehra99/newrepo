@@ -1,0 +1,13 @@
+<section id="content-bg-color">
+     <div class="container content">
+         <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <img class="img-responsive" src="{{ file_url(paragraph.field_image1.entity.uri.value) }}">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <h1>{{paragraph.field_title_1.value}}</h1>
+                <p>{{paragraph.field_text_1.value|striptags}}</p>
+            </div>
+         </div>
+     </div>
+</section>

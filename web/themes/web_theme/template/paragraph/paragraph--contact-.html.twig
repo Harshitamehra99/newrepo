@@ -1,0 +1,13 @@
+<section>
+	<div class="container text-center contact-us">
+		<div class="row">
+		  {% for key, option in paragraph.field_contact_ %}
+			<div class="col-md-6 col-sm-6">
+				<img class="img-responsive" src="{{file_url(option.entity.field_contact_img.entity.fileuri)}}">
+				<h3>{{option.entity.field_contact_title.value}}</h3>
+				<p>{{option.entity.field_contact_text.value}}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

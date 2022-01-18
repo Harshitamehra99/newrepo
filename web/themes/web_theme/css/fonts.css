@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'EXO2-REGULAR';
+    src: url('../fonts/EXO2-REGULAR.ttf');   
+}
+
+@font-face {
+  font-family: 'EXO2-BLACKITALIC';
+  src: url('../fonts/EXO2-BLACKITALIC.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EXO2-BOLD';
+  src: url('../fonts/EXO2-BOLD.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'EXO2-SEMIBOLD';
+    src: url('../fonts/EXO2-SEMIBOLD.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'EXO2-MEDIUM';
+    src: url('../fonts/EXO2-MEDIUM.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'EXO2-LIGHT';
+    src: url('../fonts/EXO2-LIGHT.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FuturaNext-Medium';
+    src: url('../fonts/FuturaNext-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}

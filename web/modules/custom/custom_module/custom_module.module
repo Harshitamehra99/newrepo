@@ -1,0 +1,33 @@
+<?php
+       
+/*
+ * Implementation of hook_form_alter()
+ */
+function custom_module_form_alter(&$form, &$form_state, $form_id){
+  // target a single form
+  if($form_id == "custom_form"){
+   
+    $form['fname']['#attributes']['placeholder'] = 'First Name';
+    $form['sname']['#attributes']['placeholder'] = 'Last Name';
+    $form['age']['#attributes']['placeholder'] = 'Age';
+    $form['marks']['#attributes']['placeholder'] = 'Marks';
+
+    $form['fname']['#attributes']['class'][] = 'form-control';
+    $form['marks']['#attributes']['class'][] = 'form-control';
+    $form['age']['#attributes']['class'][] = 'form-control';
+    $form['sname']['#attributes']['class'][] = 'form-control';
+    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-primary';
+  
+    $form['fname']['#size'] = 20;
+    $form['sname']['#size'] = 20;
+    $form['age']['#size'] = 20;
+    $form['marks']['#size'] = 20;
+
+    $form['fname']['#weight'] = 1;
+    $form['sname']['#weight'] = 2;
+    $form['age']['#weight'] = 3;
+    $form['marks']['#weight'] = 4;
+
+    // unset($form['fname']);
+  }
+}
